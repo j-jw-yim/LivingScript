@@ -1,0 +1,7 @@
+{
+  "character_id": "J",
+  "name": "J",
+  "voice_notes": "Fills silences. Asks questions that sound casual.",
+  "traits": ["persistent", "anxious for connection", "deflects with humor"],
+  "forbidden_expressions": ["obviously", "actually", "needless to say"]
+}

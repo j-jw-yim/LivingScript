@@ -1,0 +1,34 @@
+%% Architecture diagram - can be rendered with Mermaid
+%% https://mermaid.live
+
+flowchart TB
+    subgraph Data["Data Layer"]
+        SCENES[scripts/scenes/*.json]
+        PROMPTS[scripts/prompts/*.txt]
+        VERSIONS[data/versions/*.json]
+    end
+
+    subgraph Engine["Engine"]
+        GRAPH[graph.py - Load, validate, traverse]
+        CONTROLS[controls.py - ModulationParams]
+        GENERATOR[generator.py - build_prompt, call_model]
+        MEMORY[memory.py - save_version]
+    end
+
+    subgraph UI["React UI"]
+        GRAPH_UI[Scene Graph]
+        SCRIPT[Script Panel]
+        CTRL[Control Panel]
+        VH[Version History]
+    end
+
+    SCENES --> GRAPH
+    PROMPTS --> GENERATOR
+    GRAPH --> GENERATOR
+    CONTROLS --> GENERATOR
+    GENERATOR --> MEMORY
+    MEMORY --> VERSIONS
+
+    GRAPH_UI --> |/api/scenes| GRAPH
+    CTRL --> |/api/generate| GENERATOR
+    VH --> |/api/versions| MEMORY

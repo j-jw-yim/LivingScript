@@ -1,0 +1,12 @@
+{
+  "scene_id": "S3",
+  "setting": "kitchen, late night",
+  "emotional_state": ["avoidant", "tense"],
+  "characters": ["D", "J"],
+  "beats": ["small talk", "deflection", "failed intimacy"],
+  "constraints": {"max_lines": 10, "no_exposition": true, "subtext_over_text": true},
+  "transitions": [
+    { "target": "S4", "type": "emotional" },
+    { "target": "S5", "type": "choice" }
+  ]
+}

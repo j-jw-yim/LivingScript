@@ -1,0 +1,11 @@
+{
+  "scene_id": "S4",
+  "setting": "hallway, late",
+  "emotional_state": ["tense", "exhausted"],
+  "characters": ["D", "J"],
+  "beats": ["confrontation", "breakdown", "recoil"],
+  "constraints": {"max_lines": 12, "no_exposition": true},
+  "transitions": [
+    { "target": "S6", "type": "emotional" }
+  ]
+}

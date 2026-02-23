@@ -1,0 +1,22 @@
+Write a scene of dialogue for a script.
+
+## Setting
+{setting}
+
+## Characters
+{characters}
+{character_voices}
+
+## Beats (must all appear in order)
+{beats}
+
+## Emotional Register
+{emotional_state}
+
+## Constraints
+{constraints_block}
+
+Output format: character names followed by dialogue. No stage directions. No exposition.
+Example:
+D: [dialogue]
+J: [dialogue]

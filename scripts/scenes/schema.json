@@ -1,0 +1,60 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Scene",
+  "description": "A node in the script graph — a scene with beats, emotional state, and constraints",
+  "type": "object",
+  "required": ["scene_id", "setting", "emotional_state", "characters", "beats"],
+  "properties": {
+    "scene_id": {
+      "type": "string",
+      "pattern": "^[A-Z0-9]+$",
+      "description": "Unique identifier, e.g. S1, S2, S3"
+    },
+    "setting": {
+      "type": "string",
+      "description": "Where and when — e.g. 'kitchen, late night'"
+    },
+    "emotional_state": {
+      "type": "array",
+      "items": { "type": "string" },
+      "minItems": 1,
+      "description": "Affective register — e.g. ['avoidant', 'tense']"
+    },
+    "characters": {
+      "type": "array",
+      "items": { "type": "string" },
+      "minItems": 1,
+      "description": "Character IDs present in scene"
+    },
+    "beats": {
+      "type": "array",
+      "items": { "type": "string" },
+      "minItems": 1,
+      "description": "Narrative units that must land — e.g. ['small talk', 'deflection', 'failed intimacy']"
+    },
+    "constraints": {
+      "type": "object",
+      "description": "Optional rules governing generation",
+      "properties": {
+        "max_lines": { "type": "integer", "minimum": 1 },
+        "no_exposition": { "type": "boolean", "default": false },
+        "subtext_over_text": { "type": "boolean", "default": false },
+        "forbidden_words": {
+          "type": "array",
+          "items": { "type": "string" }
+        }
+      }
+    },
+    "transitions": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "target": { "type": "string", "description": "scene_id of next scene" },
+          "type": { "type": "string", "enum": ["emotional", "choice", "default"] }
+        }
+      },
+      "description": "Outgoing edges to other scenes"
+    }
+  }
+}

@@ -1,0 +1,9 @@
+CONSTRAINT RULES (apply strictly):
+
+- Max lines of dialogue: {max_lines}
+- Emotional intensity (1–10): {emotional_intensity}
+- Emotional distance (1–10, higher = more guarded): {emotional_distance}
+- Silence density (0–1, higher = more pauses): {silence_density}
+- Subtext over explicit language: {subtext_over_text}
+- No exposition (characters never explain their feelings): {no_exposition}
+- Forbidden phrases: {forbidden_language}

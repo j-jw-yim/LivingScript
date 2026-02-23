@@ -1,0 +1,9 @@
+{
+  "scene_id": "S6",
+  "setting": "front door",
+  "emotional_state": ["final", "empty"],
+  "characters": ["D"],
+  "beats": ["decision", "exit", "alone"],
+  "constraints": {"max_lines": 5, "no_exposition": true},
+  "transitions": []
+}

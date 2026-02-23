@@ -1,0 +1,11 @@
+{
+  "scene_id": "S5",
+  "setting": "bedroom doorway",
+  "emotional_state": ["resigned", "distant"],
+  "characters": ["D", "J"],
+  "beats": ["retreat", "unspoken goodbye", "door closes"],
+  "constraints": {"max_lines": 6, "subtext_over_text": true},
+  "transitions": [
+    { "target": "S2", "type": "emotional" }
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "scene_id": "S1",
+  "setting": "apartment, morning",
+  "emotional_state": ["neutral", "uncertain"],
+  "characters": ["D", "J"],
+  "beats": ["arrival", "surface greeting", "unspoken history"],
+  "constraints": {"max_lines": 8, "no_exposition": true},
+  "transitions": [
+    { "target": "S2", "type": "emotional" },
+    { "target": "S3", "type": "choice" }
+  ]
+}

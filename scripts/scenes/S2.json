@@ -1,0 +1,11 @@
+{
+  "scene_id": "S2",
+  "setting": "living room, same day",
+  "emotional_state": ["defensive", "wary"],
+  "characters": ["D", "J"],
+  "beats": ["question asked", "evasion", "escalating silence"],
+  "constraints": {"max_lines": 10, "subtext_over_text": true},
+  "transitions": [
+    { "target": "S4", "type": "emotional" }
+  ]
+}

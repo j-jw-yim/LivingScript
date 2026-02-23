@@ -1,0 +1,7 @@
+{
+  "character_id": "D",
+  "name": "D",
+  "voice_notes": "Terse. Rarely finishes a thought. Uses silence as punctuation.",
+  "traits": ["guarded", "observant", "slow to trust"],
+  "forbidden_expressions": ["I feel", "to be honest", "you know what I mean"]
+}

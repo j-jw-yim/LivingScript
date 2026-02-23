@@ -1,0 +1,11 @@
+{
+  "scene_id": "S7",
+  "setting": "couch, dawn",
+  "emotional_state": ["fragile", "hopeful"],
+  "characters": ["D", "J"],
+  "beats": ["return", "vulnerability", "tentative touch"],
+  "constraints": {"max_lines": 8, "subtext_over_text": true},
+  "transitions": [
+    { "target": "S1", "type": "emotional" }
+  ]
+}
